@@ -1,0 +1,16 @@
+.banner-spinner{
+    animation: spinner 50s infinite linear;
+}
+
+.spinner{
+    animation: spinner 5s infinite linear;
+}
+
+@keyframes spinner {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
