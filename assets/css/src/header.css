@@ -8,11 +8,10 @@
     @apply flex justify-between items-center gap-x-5;
 }
 .entire-header{
-    @apply w-full top-0 left-0 z-30;
-    position: fixed;
+    @apply w-full top-0 left-0 z-30 absolute;
 }
 .entire-header.scrolled{
-    @apply shadow-lg bg-primary bg-opacity-5;
+    @apply shadow-lg bg-sky-50;
 }
 
 /*====================
@@ -91,11 +90,11 @@ li.has-children svg{
 /* mobile-menu */
 .header-sec.scrolled {
     position: fixed;
-    background: rgba(255, 255, 255, 0.9);
     width: 100%;
     top: 0;
     z-index: 50;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    @apply bg-slate-200;
 }
 .menutrigger.active span:nth-child(1) {
     transform: rotate(45deg) translate(6px, 5px);

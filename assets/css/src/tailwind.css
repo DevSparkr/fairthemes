@@ -7,6 +7,9 @@
 @tailwind utilities;
 
 @layer base{
+    p{
+        @apply text-gray-600;
+    }
     h1,h2,h3,h4,h5,h6{
         @apply font-semibold;
     }
@@ -36,6 +39,19 @@
     }
     .btn-primary{
         @apply bg-primary text-white;
+    }
+    .sec-title{
+        @apply mx-auto max-w-xl text-center mb-10 text-lg;
+    }
+    .sec-title h2{
+        @apply relative pb-4 mb-5;
+    }
+    .sec-title h2::before,
+    .sec-title h2::after{
+        @apply content-[""] border-b-4 absolute border-primary bottom-0 w-20 left-1/2 -translate-x-1/2;
+    }
+    .sec-title h2:after {
+        @apply border-0 h-3 w-3 bg-primary rotate-45 -bottom-1;
     }
 }
 

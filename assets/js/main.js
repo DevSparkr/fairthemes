@@ -16,13 +16,13 @@ jQuery(document).ready(function($){
     });
 
     // sticky menu
-    $(window).scroll(function () {
-        if ($(window).scrollTop() > 100) {
-            $(".entire-header").addClass("scrolled");
-        } else {
-            $(".entire-header").removeClass("scrolled");
-        }
-    });
+    // $(window).scroll(function () {
+    //     if ($(window).scrollTop() > 100) {
+    //         $(".entire-header").addClass("scrolled");
+    //     } else {
+    //         $(".entire-header").removeClass("scrolled");
+    //     }
+    // });
 
     // header menu
     $(".h-menu li ul")
@@ -36,11 +36,9 @@ jQuery(document).ready(function($){
     $(".h-menu").clone().appendTo(".m-menu");
     var headerHeight = $(".entire-header").outerHeight();
     $(".mobile-menu").css({top: headerHeight +'px'});
-    //$("body").css({ paddingTop: headerHeight + "px" });
     $(window).resize(function () {
         var headerHeight = $(".entire-header").outerHeight();
         $(".mobile-menu").css({ top: headerHeight + "px" });
-        //$("body").css({ paddingTop: headerHeight + "px" });
     });
     $(".menutrigger").on("click", function () {
         $(this).toggleClass("active");

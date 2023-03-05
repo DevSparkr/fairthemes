@@ -14,3 +14,14 @@
         transform: rotate(360deg);
     }
 }
+
+/* services section */
+.service-card{
+    @apply bg-white bg-opacity-70 shadow-xl shadow-sky-100 p-7 lg:p-8 rounded-lg;
+}
+.service-card h4{
+    @apply font-semibold mb-3;
+}
+.service-card p{
+    @apply leading-7 text-gray-400;
+}
